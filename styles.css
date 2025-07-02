@@ -1,0 +1,170 @@
+:root {
+  --primary: #008060;
+  --light: #f4f4f4;
+  --dark: #222;
+  --card: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--light);
+  color: #333;
+  line-height: 1.6;
+}
+
+.main-nav {
+  background: var(--primary);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero {
+  background: linear-gradient(135deg, #006644, #009070);
+  color: #fff;
+  padding: 60px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.btn-primary {
+  background: #fff;
+  color: var(--primary);
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  background: #fff;
+  text-align: center;
+}
+
+.stats div {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stats strong {
+  font-size: 2rem;
+  display: block;
+}
+
+.map-gallery {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+#pollutionMap {
+  flex: 2;
+  min-height: 300px;
+  background: #ddd;
+  border-radius: 8px;
+}
+
+#photoGallery {
+  flex: 1;
+}
+
+#photoGallery h2 {
+  margin-bottom: 10px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+@media (min-width: 600px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.features {
+  padding: 40px;
+  text-align: center;
+}
+
+.feat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.feat-grid div {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background: var(--dark);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  margin: 0 8px;
+  font-size: 1.2rem;
+}
+
+.bargraph-container {
+  padding: 40px;
+}
+
+.bargraph {
+  width: 100%;
+  height: 300px;
+}

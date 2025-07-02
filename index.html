@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Community Clean-Up</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Header -->
+  <nav class="main-nav">
+    <div class="logo">🌿 Community Clean-Up</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="volunteer.html">Volunteer</a></li>
+      <li><a href="volunteers-list.html">Volunteer List</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Join the Drive to Clean India's Streets 🌏</h1>
+    <p>Together, we're making neighborhoods healthier, greener—and more vibrant!</p>
+    <a href="volunteer.html" class="btn-primary">Volunteer Now</a>
+  </header>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div><strong id="pollutionIndex">—</strong><span>Avg Pollution Index</span></div>
+    <div><strong id="eventsCount">3</strong><span>Upcoming Drives</span></div>
+    <div><strong>12</strong><span>Partner Cities</span></div>
+  </section>
+
+  <!-- Map & Gallery Section -->
+  <section class="map-gallery">
+    <div id="pollutionMap"></div>
+
+    <div id="photoGallery">
+      <h2>Our Clean-Up Drives</h2>
+      <div class="gallery-grid">
+        <img src="a1.jpg" alt="Clean-up Drive 1" />
+        <img src="a2.jpg" alt="Clean-up Drive 2" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <h2>Why Join Us?</h2>
+    <div class="feat-grid">
+      <div><i class="fas fa-users"></i><h3>Community Bonding</h3><p>Make friends, feel the pride.</p></div>
+      <div><i class="fas fa-leaf"></i><h3>Eco Impact</h3><p>Cleaner parks, greener tomorrow.</p></div>
+      <div><i class="fas fa-chart-line"></i><h3>Measure Results</h3><p>Track our progress live.</p></div>
+      <div><i class="fas fa-chalkboard-teacher"></i><h3>Learn & Educate</h3><p>Workshops & materials included.</p></div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="features">
+    <h2>Contact Us</h2>
+    <p style="text-align:center;">📧 Email: contact@communitycleanup.org | 📞 Phone: +91 98765 43210</p>
+    <p style="text-align:center;">📍 Office: Hyderabad, India</p>
+  </section>
+
+  <!-- Graph Section -->
+  <section class="bargraph-container">
+    <h2 style="text-align:center;">City-wise Volunteer Requirements</h2>
+    <canvas id="barGraph" class="bargraph"></canvas>
+    <p style="text-align:center; margin-top: 10px;">🟢 Required Volunteers</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div>&copy; 2025 Community Team • Follow us:
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
